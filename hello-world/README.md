@@ -1,11 +1,11 @@
 # Hello World C++ Program
-*If you want to just jump in without explanation, jump to the [simplified instructions](#"i-dont-know-what-to-do-in-windows-im-confused-just-tell-me-what-to-do")*
+*If you want to just jump in without explanation, jump to the [simplified instructions](#i-dont-know-what-to-do-in-windows-im-confused-just-tell-me-what-to-do)*.
 
 Unfortunately, this is one of the hardest and easiest steps in beginning to program any language, particularly with C or C++ given the nature of both languages. Just getting to being able to compile and run the basic "Hello World" program can be frustrating due to the amount of setup necessary for success.
 
-C++ is a compiled programming requiring a developer tool called a "compiler" to run C++ code on your machine. This is in contrast to languages like Python (where you can run the code directly with the Python shell) and Java (which is both compiled and interpreted). Essentially, you cannot do something like `run hello-world.cpp` with your [hello-world.cpp](https://github.com/zsholdbrooks/cpp-reference/tree/master/hello-world/hello-world.cpp) file like in Python with `python hello-world.py`. C++ cannot be run directly since your computer's internal components can't just directly interpret your written words. The compiler program works as a translator so that it can take C++ code and recreate it in a format that your computer does understand.
+C++ is a compiled programming requiring a developer tool called a "compiler" to run C++ code on your machine. This is in contrast to languages like Python (where you can run the code directly with the Python shell) and Java (which is both compiled and interpreted). Essentially, you cannot do something like `run hello-world.cpp` with your [hello-world.cpp](https://github.com/zsholdbrooks/cpp-reference/tree/main/hello-world/hello-world.cpp) file like in Python with `python hello-world.py`. C++ cannot be run directly since your computer's internal components can't just directly interpret your written words. The compiler program works as a translator so that it can take C++ code and recreate it in a format that your computer does understand.
 
-Which compiler is used for C++ is up for some debate, but the most common is `g++`. Since g++ was not originally developed for Windows, the compiler is generally installed via MinGW or a couple of other indirect options. Sometimes, a compiler is installed alongside an Integrated Development Environment (IDE) like Visual Studio (not VS Code) and Visual C++ (a different compiler). For simplicity, I recommend installing Visual Studio Code and using Windows Subshell for Linux (WSL). Visual Studio Code is a simple and lightweight code editor that doesn't stress hard on project files like other IDEs.
+Which compiler is used for C++ is up for some debate, but the most common is **g++**. Since g++ was not originally developed for Windows, the compiler is generally installed via MinGW or a couple of other indirect options. Sometimes, a compiler is installed alongside an Integrated Development Environment (IDE) like Visual Studio (not VS Code) and Visual C++ (a different compiler). For simplicity, I recommend installing Visual Studio Code and using Windows Subshell for Linux (WSL). Visual Studio Code is a simple and lightweight code editor that doesn't stress hard on project files like other IDEs.
 
 Windows Subshell for Linux (WSL) enables you to use true Linux functionality on a Windows desktop without more complicated measures like VMs or installing a second OS. WSL is developed directly by Microsoft with growing efforts to improve its capabilities consistently over time. While it is not identical to a dedicated Linux computer, it is a very good option for cases like this. Since both VS Code and WSL are developed by Microsoft, there is an extension within VS Code that link the two together enabling easier development.
 
@@ -15,7 +15,7 @@ Windows Subshell for Linux (WSL) enables you to use true Linux functionality on 
 
 ## Prerequisites:
  - Have a usable console/terminal
-    - Examples are `Bash` in Linux, `Ubuntu on Windows` on Windows (really just Bash in disguise), or `Powershell`/`Command Prompt` in Windows
+    - Examples are *Bash* in Linux, *Ubuntu on Windows* on Windows (really just Bash in disguise), or *Powershell*/*Command Prompt* in Windows
     - (Recommended) Install WSL and use Ubuntu on Windows
  - The g++ compiler is installed
     - Compiler installation tends to be the most difficult part and is discussed below in its own section
@@ -25,9 +25,9 @@ Windows Subshell for Linux (WSL) enables you to use true Linux functionality on 
 ------------------------------------------
 
 ## (Recommended) Install WSL and use Ubuntu
-1. Go to Windows Start Menu, type in `Powershell`, right click `Windows Powershell`, and select `Run as Administrator`.
+1. Go to Windows Start Menu, type in `powershell`, right click `Windows Powershell`, and select `Run as Administrator`.
 2. Run `wsl --install -d Ubuntu` to prompt Windows to install WSL 2 and Ubuntu. Once it (hopefully) successfully installs, restart your computer.
-3. When your computer has restarted, type in `Ubuntu` in the Windows Start Menu and select the `Ubuntu` or `Ubuntu on Windows` app to open your Ubuntu Terminal.
+3. When your computer has restarted, type in `ubuntu` in the Windows Start Menu and select the `Ubuntu` or `Ubuntu on Windows` app to open your Ubuntu Terminal.
     - Might want to right click it and pin it to the taskbar for easy access. 
 4. Do setup steps it asks for initial setup like username and password. These will be different than your Windows username and password since it acts like a different Operating System.
 5. Run `sudo apt-get install g++ make` and accept installation prompts.
@@ -47,17 +47,17 @@ Windows Subshell for Linux (WSL) enables you to use true Linux functionality on 
 4. Clone main directory by running `git clone https://github.com/zsholdbrooks/cpp-reference.git`
     - This downloads the full project to a new directory of `cpp-reference`
 5. Open the C++ project by running `code cpp-reference`
-    - Running this command uses the `Remote - WSL` VS Code plugin installed from the first step. It opens the cpp-reference directory within a new instance of VS Code.
+    - Running this command uses the "Remote - WSL" VS Code plugin installed from the first step. It opens the cpp-reference directory within a new instance of VS Code.
 6. Open the terminal window in VS Code by either functionally identical option below:
     - Option 1: Pressing the `Ctrl`, `Shift`, and `~` keys together (also seen as `Ctrl + Shift + ~`)
     - Option 2: Selecting the `Terminal` tab at the very top then select the `New Terminal` option
-    - Note: This terminal is the same as a standalone `Ubuntu on Windows` terminal but just accessible inside VS Code.
+    - Note: This terminal is the same as a standalone *Ubuntu on Windows* terminal but just accessible inside VS Code.
 7. Change into the `hello-world` folder of the project by running `cd hello-world`
-    - The directory path inside the VS Code terminal prior to this command should be something like `~/projects/cpp-reference` since you opened the cpp-reference directory with VS Code despite not doing a deliberate `cd` into the directory.
+    - The directory path inside the VS Code terminal prior to this command should be something like `~/projects/cpp-reference` since you opened the cpp-reference directory with VS Code despite not doing a deliberate *cd* into the directory.
 8. Click on the `hello-world.cpp` file on the left section to open and look at the program's code.
     - You should have the `Explorer` tab open in VS Code on the left already. If not, click on the first icon at the far top left that looks like a piece of paper with a corner folded. You can hover over it with your cursor to see it say `Explorer` as well.
-9. Compile the `hello-world.cpp` code by running `g++ hello-world.cpp -o hello-world.out`
-10. Finally, run the compiled program with `./hello-world.out` to see `Hello World!` displayed on the terminal window.
+9. Compile the [hello-world.cpp](https://github.com/zsholdbrooks/cpp-reference/tree/main/hello-world/hello-world.cpp) code by running `g++ hello-world.cpp -o hello-world.out`
+10. Finally, run the compiled program with `./hello-world.out` to see **Hello World!** displayed on the terminal window.
     - Note: Whenever you run a new compiled program in a folder, you must prefix it with `./` or else the terminal will try to look in another place instead of your current folder. Because of this, it will likely say `Command not found` if you forget the `./`
 11. Once you are done looking at the code, you can run `cd ..` to go up a folder to the main project folder. Enjoy.
 
@@ -83,21 +83,25 @@ Good references
 ------------------------------------------
 
 ## "I don't know what to do in Windows. I'm confused. Just tell me what to do!"
-1. Press the Windows Key, start typing in `powershell` to start a program search, and select `Run as Administrator` on the start menu's right side window.
+1. Press the `Windows Key`, start typing in `powershell` to start a program search, and select `Run as Administrator` on the start menu's right side window.
 2. Run (type in highlighted text and hit the Enter key) `wsl --install -d Ubuntu` in Windows Powershell
 3. Restart your computer when it finishes
 4. Install [Visual Studio Code](https://code.visualstudio.com/)
 5. Install [C++ Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack) as an add-on for VS Code
     - Click `Install` on the webpage, `Continue` on the first prompt, `Open in Visual Studio Code` on the browser prompt, and `Install` on the extension page that is shown in VS Code.
-6. Press Windows Key, type in `Ubuntu` and select program named `Ubuntu on Windows` (or it may just be `Ubuntu`)
+6. Press `Windows Key`, type in `ubuntu` and select program named `Ubuntu on Windows` (or it may just be `Ubuntu`)
 7. Follow the prompts it gives you by typing in your responses and hitting `Enter`
 8. Once Ubuntu is set up, run `sudo apt-get install g++ make` and accept installation prompts
-9. Copy the full command block below, right click the Ubuntu window (this pastes it since Ubuntu does not accept `Ctrl + V`), and hit `Enter`
-    - `mkdir projects && git clone https://github.com/zsholdbrooks/cpp-reference.git projects/cpp-reference && code projects/cpp-reference`
+9. Copy the full command block below, right click the Ubuntu window (Ubuntu doesn't accept `Ctrl + V` pastes), and hit `Enter`
+     ```
+     mkdir projects && git clone https://github.com/zsholdbrooks/cpp-reference.git projects/cpp-reference && code projects/cpp-reference
+     ```
 10. In the new VS Code window, select the `Terminal` tab at the very top then select the `New Terminal` option
 11. Copy the below code block and right click the center of the terminal window in VS Code
-    - `cd hello-world && g++ hello-world.cpp -o hello-world.out`
     - You may need to click the bottom Terminal window to type in commands if you accidentally clicked elsewhere. It changes into hello-world folder and compiles the program.
+    ```
+    cd hello-world && g++ hello-world.cpp -o hello-world.out
+    ```
 12. Click on the `hello-world.cpp` file on the left section to open and look at the program's code that you just compiled.
     - You should have the `Explorer` tab open in VS Code on the left already. If not, click on the first icon at the far top left that looks like a piece of paper with a corner folded. You can hover over it with your cursor to see it say `Explorer` as well.
 13. Run `./hello-world.out` in the Terminal window below to actually execute the program. You should see `Hello World!` appear in the terminal after running it.
