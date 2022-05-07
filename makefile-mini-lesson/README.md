@@ -121,3 +121,6 @@ I recommend stepping through the example like this:
 4. Running `make demonstrate-wildcard` will show the difference between using asterisks (*) and make's wildcard operator. Using asterisks is common in cases like running `ls *.cpp` where you might want to see all the cpp files in your current directory. The asterisk just acts as a placeholder for any character and any number of characters. There are some problems with how make interprets the asterisk though, so using the wildcard operator is a more robust method.
 5. Finally, run `make` or `make all` and step through each target while referencing the examples in the [section](#makefiles-from-a-technical-side) above.
     - This will actually build the project in this directory, so you can also run `./example.out` if you'd like to look through that C++ code as well.
+
+# Automatic Variables
+Automatic variables are automatically generated variables that will correspond to something like the make target `$@` or target prerequisites `$^` for each specific context. Reference the GNU makefile manual's [automatic variable cheatsheet](https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html) to interpret them as needed in makefiles.
