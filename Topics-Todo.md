@@ -1,9 +1,12 @@
 ## C++ Topics Left to Implement
 - [ ] Basic Variables
-    - Consts, structs, enums
 - [ ] Math operations
 - [ ] Bit level topics
+- [ ] Consts, structs, enums
     - Bit manipulation, alignment, packing, unions
+- [ ] If and Switch statements
+    - Logical operators
+    - Ternary operator
 - [ ] Loops
     - while loop
     - do while loop
@@ -11,22 +14,20 @@
     - for loop
     - for each (C++11)
     - continue and break
-- [ ] If and Switch statements
-    - Logical operators
-    - Ternary operator
-- [ ] String Manipulation
-- [ ] Streams
-    - [endl vs \n](https://www.geeksforgeeks.org/endl-vs-n-in-cpp/)
-    - Files
 - [ ] Arrays and Vectors
     - Iterators
-- [ ] Functions
-    - Basic, const correctness
-- [ ] Scope
-- [ ] Namespaces
 - [ ] References and Pointers (PBV & PBR)
     - Memory allocation
     - Function pointers
+- [ ] Functions
+    - Basic, const correctness
+- [ ] String Manipulation
+    - Encodings like ASCII, UTF-8, UTF-16
+- [ ] Streams
+    - [endl vs \n](https://www.geeksforgeeks.org/endl-vs-n-in-cpp/)
+    - Files
+- [ ] Scope
+- [ ] Namespaces
 - [ ] Data Structures
     - Linked List, Stack, Queue, BST
 - [ ] Exceptions and Error Handling

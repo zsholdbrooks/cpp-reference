@@ -2,7 +2,7 @@
 #include "basic-topics/basic-topics.h"
 
 void BasicFunctionality(void) {
-   IntroduceVariables();
+   DiscussVariables();
 }
 
 void FunctionalityCatalog(int argc, char *argv[]) {

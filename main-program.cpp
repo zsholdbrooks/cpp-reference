@@ -19,7 +19,7 @@ using namespace std;
  */
 int main(int argc, char *argv[]) {
    // Print text to console via C++'s cout
-   cout << "Welcome to the C++ reference program!" << endl;
+   cout << "Welcome to the C++ reference program!\n" << endl;//
 
    // Declare and initialize a variable
    bool verboseIntroduction = true;

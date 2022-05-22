@@ -36,7 +36,7 @@ setup:
 	@mkdir -p obj $(BASIC_TOPICS_OBJ_DIR)
 
 # Compile reference program
-reference.out: $(OBJ_FILES)
+reference.out: $(OBJ_FILES) main-program.cpp
 	$(CXX) main-program.cpp $(OBJ_FILES) -Wall -o $@
 
 $(BUILD_DIR)/functionality-catalog.o: $(SRC_DIR)/functionality-catalog.cpp
